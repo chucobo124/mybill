@@ -1,0 +1,44 @@
+top_level:
+  id: 1
+  title: Top Level
+  description: <%= Faker::Lorem.paragraph%>
+  lft: 1
+  rgt: 10
+  depth: 0
+  children_count: 3
+child_1:
+  id: 2
+  title: Child_1
+  description: <%= Faker::Lorem.paragraph%>
+  parent_id: 1
+  lft: 2
+  rgt: 3
+  depth: 1
+  children_count: 0
+child_2:
+  id: 3
+  title: Child_2
+  description: <%= Faker::Lorem.paragraph%>
+  parent_id: 1
+  lft: 4
+  rgt: 7
+  depth: 1
+  children_count: 1
+child_2_1:
+  id: 4
+  title: Child_2-1
+  description: <%= Faker::Lorem.paragraph%>
+  parent_id: 3
+  lft: 5
+  rgt: 6
+  depth: 2
+  children_count: 0
+child_3:
+  id: 5
+  title: Child_3
+  description: <%= Faker::Lorem.paragraph%>
+  parent_id: 1
+  lft: 8
+  rgt: 9
+  depth: 1
+  children_count: 0
