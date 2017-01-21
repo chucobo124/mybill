@@ -9,8 +9,9 @@ class BillsControllerTests < ActionDispatch::IntegrationTest
     }
   end
   test 'create' do
-    post '/bill', params: @data_form.to_json
+    post bill_url, params: {name: 'Lucas'}
     response = JSON.parse(@response.body)
     assert_equal 'ok', response[:success]
+    follow_redirect!
   end
 end
