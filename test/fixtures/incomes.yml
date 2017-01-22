@@ -4,8 +4,16 @@
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-one: {}
-# column: value
-#
-two: {}
-# column: value
+income_one: {
+  title: 'My first Income',
+  description: 'The first Income',
+  price: 77.1,
+  category_id: 1
+}
+
+income_two: {
+  title: 'My second Income',
+  description: 'The second Income',
+  price: 50.1,
+  category_id: 1
+}

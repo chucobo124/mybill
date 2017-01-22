@@ -1,5 +1,7 @@
 class BillsController < ApplicationController
-  def show
+  def index
+    bills = Bill.all
+    paginate json: bills, per_page: 50
   end
 
   def create
